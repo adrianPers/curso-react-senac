@@ -1,0 +1,8 @@
+
+.lista-habilidade{
+    background-color: rgba(88, 88, 88, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+    list-style-position: inside;
+    width: 90%;
+}

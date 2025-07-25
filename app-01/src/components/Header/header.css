@@ -1,0 +1,45 @@
+.header-perfil{
+    width: 500px;
+    background-color: orange;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.header-perfil h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.header-perfil span{
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    background: linear-gradient(75deg, transparent 40%, rgba(255, 255, 255, 0.5) 50%, transparent 60%);    position: absolute;
+    z-index: 2;
+    animation: destacar 3s linear infinite;
+}
+
+@keyframes destacar {
+
+    0%{
+        left: -100%;
+    }
+
+    100%{
+        left: 100%;
+    }
+    
+}
+
+.foto{
+    height: 100px;
+    margin-top: 5px;
+    
+}

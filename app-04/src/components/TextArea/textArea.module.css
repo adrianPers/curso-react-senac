@@ -1,0 +1,31 @@
+
+.textAreaBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.textArea{
+    /* height: 100%; */
+    flex: 1;
+    display: flex;
+    resize: none;
+    outline: none;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    
+}
+
+.textArea:focus{
+    border-color: rgb(255, 0, 242);
+}
+
+.textAreaLabel{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}

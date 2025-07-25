@@ -1,0 +1,9 @@
+main{
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+}

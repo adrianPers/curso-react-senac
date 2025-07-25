@@ -1,0 +1,37 @@
+.boxContainer{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    gap: 10px;
+    width: 200px;
+     overflow: hidden;
+
+}
+
+.boxItem{
+    background-color: rgba(0, 0, 0, 0.2);
+     border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+     gap: 10px;
+     overflow: hidden;
+}
+
+span{
+    color: white;
+}
+
+button{
+    background-color: rgb(74, 120, 221);
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}

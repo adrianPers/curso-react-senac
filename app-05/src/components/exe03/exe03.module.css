@@ -1,0 +1,20 @@
+
+.task{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.taskCompleted{
+    background-color: rgb(83, 83, 83);
+    text-decoration: line-through;
+    
+}
+
+.taskNotCompleted{
+    background-color: rgb(165, 165, 165);
+}

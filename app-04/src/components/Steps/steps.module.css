@@ -1,0 +1,45 @@
+
+.steps{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.step{
+    /* background-color: #ca1515; */
+    padding-block: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    font-weight: bold;
+    color: rgb(204, 204, 204);;
+}
+
+.numberStep{
+    background-color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.arrowRight{
+    height: 20px;
+}
+
+.currentStep{
+    color: black;
+}
+
+.currentStep span{
+    background-color: rgb(255, 0, 242);
+
+}

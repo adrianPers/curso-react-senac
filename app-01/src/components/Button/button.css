@@ -1,0 +1,37 @@
+
+.button{
+    background-color: orange;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Jersey 15';
+    /* border: inset 7px rgb(255, 179, 39); */
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.button span{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(60deg, transparent 40%, rgba(255, 255, 255, 0.5) 50%, transparent 60%);    position: absolute;
+    animation: destacar 3s linear infinite;
+}
+
+@keyframes destacar {
+
+    0%{
+        left: -100%;
+    }
+
+    100%{
+        left: 100%;
+    }
+    
+}

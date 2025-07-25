@@ -1,0 +1,21 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'calibri';
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title-exe{
+  margin: 20px;
+  font-size: 30px;
+  /* background-color: aqua; */
+  width: 100%;
+  text-align: center;
+}
