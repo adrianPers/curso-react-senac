@@ -18,7 +18,7 @@ const exe01 = (props : Exe01Props) => {
 
       { props.status && (
         
-      <p>Você consegue me ver?</p>
+      <p>Você consegue me ver agora?</p>
 
       )}
     </div>
