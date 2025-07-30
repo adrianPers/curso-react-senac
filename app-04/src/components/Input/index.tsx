@@ -3,11 +3,12 @@ import styles from './input.module.css';
 
 type InputProps = {
     label: string;
+    name: string;
     type?: string;
     placeholder?: string;
     value?: string;  
     required?: boolean;
-    update?: (name: string, value: string) => void;
+    update: (name: string, value: string) => void;
 }
 
 const Input = (props: InputProps) => {
@@ -25,9 +26,9 @@ const Input = (props: InputProps) => {
                 value={props.value}
                 required={props.required}
                 onChange={(e) => {
-                    if (props.update) {
-                        props.update(props.label, e.target.value);
-                    }
+                   
+                        props.update(props.name, e.target.value);
+                
                 }}
             />
             <p></p>

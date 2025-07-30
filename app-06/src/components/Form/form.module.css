@@ -1,0 +1,24 @@
+
+
+.form{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+}
+
+.inputForm{
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.inputForm:focus{
+    border-color: rgb(15, 120, 240);
+    caret-color:  rgb(15, 120, 240);
+}

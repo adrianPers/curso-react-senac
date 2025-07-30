@@ -3,6 +3,9 @@ import styles from './textArea.module.css';
 
 type TextAreaProps = {
     label: string;
+    name: string;
+    value?: string;
+    update: (name: string, value: string) => void;
     rows?: number;
     placeholder?: string;
     
@@ -18,7 +21,11 @@ const TextArea = (props : TextAreaProps) => {
             <textarea 
             className={styles.textArea} 
             placeholder={props.placeholder}
-            rows={props.rows || 5}>
+            rows={props.rows || 5}
+            value={props.value}
+            onChange={e => {
+                props.update(props.name, e.target.value)
+            }}>
             </textarea>
         </div>
     )

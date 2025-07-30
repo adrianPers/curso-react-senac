@@ -5,7 +5,7 @@ import Input from './components/Input';
 import ButtonBox from './components/ButtonBox';
 import Steps from './components/Steps';
 import Divider from './components/Divider';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Form from './components/Form';
 import TextArea from './components/TextArea';
 
@@ -13,6 +13,7 @@ import TextArea from './components/TextArea';
 function App() {
 
   const [currentStep, setCurrentStep] = useState(0)
+
   const [dataForm, setDataForm] = useState({
     name: '',
     phone: '',
@@ -31,19 +32,19 @@ function App() {
     setCurrentStep(prevStep => prevStep - 1)
   };
 
-  const handleInputChange = (name : string, value: string) => {
-    setDataForm({
-      ...dataForm,
+  const handleInputChange = (name: string, value: string) => {
+    setDataForm((prevDataForm) => ({
+      ...prevDataForm,
       [name]: value
-    });
-  };  
+    }))
+  };
 
-  
+
 
   return (
     <div className={styles.app}
-    onKeyDownCapture={(e) => {console.log(e.key)}}>
-      
+      onKeyDownCapture={(e) => { console.log(e.key) }}>
+
       <Box >
 
         <Steps
@@ -62,25 +63,33 @@ function App() {
         {currentStep === 0 && (
           <Form>
             <Input
-              label='Nome'
+              update={handleInputChange}
+              label='nome'
+              name='name'
               placeholder='Digite seu nome'
-              required={!true} 
-              update={() => handleInputChange}
+              required={!true}
+              value={dataForm.name}
             />
 
             <Input
+              update={handleInputChange}
+              name='phone'
               label='Telefone'
               placeholder='Digite seu telefone'
-              required={false} />
+              required={false}
+              value={dataForm.phone} />
 
             <Input
+              update={handleInputChange}
+              name='email'
               label='E-mail'
               placeholder='Digite seu e-mail'
-              required={!true} />
+              required={!true}
+              value={dataForm.email} />
 
             <ButtonBox
               buttons={[
-                { text: 'Continuar', onClick: handNextStep}
+                { text: 'Continuar', onClick: handNextStep }
               ]} />
 
 
@@ -90,16 +99,25 @@ function App() {
         {currentStep === 1 && (
           <Form >
             <Input
+              name='companyName'
+              update={handleInputChange}
               label='Nome da Empresa'
               placeholder='Digite o nome da empresa'
-              required={true} />
+              required={true}
+              value={dataForm.companyName} />
 
             <Input
+              name='employeesNumber'
+              update={handleInputChange}
               label='N° de Funcionários'
               placeholder='Digite o N° de Funcionários'
-              required={false} />
+              required={false}
+              value={dataForm.employeesNumber} />
 
             <TextArea
+              name='aboutCompany'
+              value={dataForm.aboutCompany}
+              update={handleInputChange}
               label='Sobre a Empresa'
               placeholder='Fale um pouco sobre a empresa'
               rows={5}
@@ -116,8 +134,11 @@ function App() {
 
         {currentStep === 2 && (
           <Form>
-            
-           <TextArea
+
+            <TextArea
+              name='aboutProject'
+              value={dataForm.aboutProject}
+              update={handleInputChange}
               label='Sobre o prejeto'
               placeholder='Fale um pouco sobre o projeto'
               rows={5}
@@ -135,17 +156,10 @@ function App() {
 
       </Box>
 
-      {/* <div className={styles.teste}>
+      <div>
         <h2>Dados do Formulário</h2>
-        <p>nome: {dataForm.name}</p>
-        <p>telefone: {dataForm.phone}</p>
-        <p>email: {dataForm.email}</p>
-        <p>nome da empresa: {dataForm.companyName}</p>
-        <p>n° de funcionários: {dataForm.employeesNumber}</p>
-        <p>sobre a empresa: {dataForm.aboutCompany}</p> 
-        <p>sobre o projeto: {dataForm.aboutProject}</p>
-
-      </div> */}
+        <pre>{JSON.stringify(dataForm, null, 2)}</pre>
+      </div>
 
     </div>
   )
