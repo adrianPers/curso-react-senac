@@ -1,11 +1,7 @@
 <p 
 align="center">
     <img 
-    height=200
-    src="./assets/logo-react-ts.png" />
-    <img 
-    height=200
-    src="./assets/logo-senac.png" />
+    src="./assets/img-header.png" />
 </p>
 
 ## Sobre o curso
