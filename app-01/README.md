@@ -1,29 +1,13 @@
 
-<div 
-style="
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background-color:orange;
-  padding-left:50px;
-">
-  <h2>Card de Perfil - Aula 01</h2>
-  <img 
-  height=100
-  src="./src/assets/img-perfil.png"/>
-</div>
-
+# Card Perfil - Aula 01
 ---
-
-
-
 
 Nessa primeira aula exploramos o conceito de componetização do React com o desenvolvimento de uma página de apresentação simples: 
 
 
 <p align="center">
   <img 
-  style="max-width:500px;width:100%"
+  height=300
   src="./src/assets/tela-perfil.png"/>
 </p>
 
@@ -41,46 +25,24 @@ Nessa primeira aula exploramos o conceito de componetização do React com o des
 
 - Aumenta consistência visual e lógica: mantém o mesmo comportamento e estilo em diferentes partes da aplicação.
 
-      Em resumo: componentizar é como montar um LEGO — cada peça é independente, mas juntas formam algo maior e mais fácil de gerenciar.
+>Em resumo: componentizar é como montar um LEGO — cada peça é independente, mas juntas formam algo maior e mais fácil de gerenciar.
       
 ---
 
 # Estruturação de pastas
 
-<div 
-style="
-  display:flex;
-  justify-content:space-between;
-">
+
+ - Uma boa estruturação de pastas ajuda a organizar o projeto, melhora a manutenção, facilita colaboração.
+    
+  - Basicamente uma boa estrutura de pastas é como ter um armário arrumado — você encontra o que precisa rápido e evita o caos.
+
+ -  Podemos encontrar diversas estruturação de diretórios e cada um segue uma lógica diferente: 
+
+<p align="center">
   <img 
-  style="max-width:300px;width:100%"
+  height=300
   src="./src/assets/pastas-perfil.png"/>
-  <div>
-    <p
-  style="
-   padding:10px;
-   text-align:justify;
-  "> 
-    Uma boa estruturação de pastas ajuda a organizar o projeto, melhora a manutenção, facilita colaboração.
-      </p>
-      <p
-  style="
-   padding:10px;
-   text-align:justify;
-  "> 
-   Basicamente uma boa estrutura de pastas é como ter um armário arrumado — você encontra o que precisa rápido e evita o caos.
-  </p>
-
-   <p
-  style="
-   padding:10px;
-   text-align:justify;
-  "> 
-  Podemos encontrar diversas estruturação de diretórios e cada um segue uma lógica diferente.
-  </p>
-  </div>
-
-</div>
+</p>
 
 ---
 by : Adrian Pereira - [LinkedIn](https://www.linkedin.com/in/dev-adrian-pereira/) - [GitHub](https://github.com/adrianPers)
