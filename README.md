@@ -1,2 +1,9 @@
-# Curso de React - Senac
-Repositório criado para armazenar o conteúdo do meu curso de React.Js no Senac 
+<p 
+align="center">
+<img 
+height=200px
+src="./assets/logo-senac.png">
+<img 
+height=200px
+src="./assets/logo-senac.png">
+</p>
