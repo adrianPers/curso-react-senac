@@ -1,9 +1,27 @@
 
 # Card Perfil - Aula 01
----
+
 
 Nessa primeira aula exploramos o conceito de componetização do React com o desenvolvimento de uma página de apresentação simples: 
 
+### Componente Perfil :
+```tsx
+const Perfil = () => {
+    return (
+        <main>
+            <Header />
+            <Bio />
+            <ListaHabilidade />
+            <Button />
+        </main>
+    )
+}
+```
+<p align="right">
+./src/components/Perfil/index.tsx
+</p>
+
+### Resultado :
 
 <p align="center">
   <img 
@@ -29,7 +47,7 @@ Nessa primeira aula exploramos o conceito de componetização do React com o des
       
 ---
 
-# Estruturação de pastas
+### Estruturação de pastas
 
 
  - Uma boa estruturação de pastas ajuda a organizar o projeto, melhora a manutenção, facilita colaboração.
